@@ -24,7 +24,7 @@ export default function PhotoGallery() {
 			<section className="py-12 px-4 bg-gradient-to-r from-stone-50 to-amber-50">
 				<div className="max-w-6xl mx-auto">
 					<div className="text-center mb-8">
-						<h2 className="text-3xl font-bold text-amber-800 mb-2">Bump Gallery</h2>
+						<h2 className="text-3xl font-bold text-primary mb-2">Bump Gallery</h2>
 					</div>
 
 					{/* Improved Masonry Grid using CSS columns */}
