@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react"
+// import { useEffect, useRef } from "react"
 import coverPhoto from "../assets/cover.jpg"
 
 export default function Hero() {
@@ -8,32 +8,32 @@ export default function Hero() {
 			behavior: "smooth",
 		})
 	}
-	const heroRef = useRef(null)
-	const lastScrollY = useRef(window.scrollY)
+	// const heroRef = useRef(null)
+	// const lastScrollY = useRef(window.scrollY)
 
-	useEffect(() => {
-		const handleScroll = () => {
-			const hero = heroRef.current
-			if (!hero) return
+	// useEffect(() => {
+	// 	const handleScroll = () => {
+	// 		const hero = heroRef.current
+	// 		if (!hero) return
 
-			const rect = hero.getBoundingClientRect()
-			const inView = rect.top < window.innerHeight && rect.bottom > 0
+	// 		const rect = hero.getBoundingClientRect()
+	// 		const inView = rect.top < window.innerHeight && rect.bottom > 0
 
-			if (inView && window.scrollY > lastScrollY.current) {
-				// User is scrolling down and hero is in view
-				scrollToInvite()
-			}
-			lastScrollY.current = window.scrollY
-		}
+	// 		if (inView && window.scrollY > lastScrollY.current) {
+	// 			// User is scrolling down and hero is in view
+	// 			scrollToInvite()
+	// 		}
+	// 		lastScrollY.current = window.scrollY
+	// 	}
 
-		window.addEventListener("scroll", handleScroll)
-		return () => window.removeEventListener("scroll", handleScroll)
-	}, [scrollToInvite])
+	// 	window.addEventListener("scroll", handleScroll)
+	// 	return () => window.removeEventListener("scroll", handleScroll)
+	// }, [scrollToInvite])
 
 	return (
 		<section
 			id="hero"
-			ref={heroRef}
+			// ref={heroRef}
 			className="relative h-screen flex items-start md:items-center justify-center overflow-hidden"
 		>
 			{/* Hero Background Image */}
