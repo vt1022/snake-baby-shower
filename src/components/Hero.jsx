@@ -38,7 +38,12 @@ export default function Hero() {
 		>
 			{/* Hero Background Image */}
 			<div className="absolute inset-0">
-				<img src={coverPhoto} alt="Hero background" className="w-full h-full object-cover" />
+				<img
+					src={coverPhoto}
+					alt="Hero background"
+					loading="lazy"
+					className="w-full h-full object-cover"
+				/>
 				{/* yellow */}
 				{/* <div className="absolute inset-0 bg-gradient-to-b from-amber-900/40 via-amber-900/20 to-amber-900/60"></div>  */}
 				{/* wash out */}

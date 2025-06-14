@@ -49,6 +49,7 @@ export default function PhotoGallery() {
 									onClick={() => setSelectedPhoto(photo)}
 								>
 									<img
+										loading="lazy"
 										src={photo.src}
 										alt={photo.alt}
 										className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ${bottomAnchorClass}`}
@@ -83,6 +84,7 @@ export default function PhotoGallery() {
 						<img
 							src={selectedPhoto.src}
 							alt={selectedPhoto.alt}
+							loading="lazy"
 							className="max-w-full max-h-[70vh] object-contain rounded-lg"
 						/>
 						<button
