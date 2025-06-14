@@ -8,7 +8,10 @@ import {
 	CalendarPlus,
 	CircleParking,
 	Map,
-    ListCheck,
+	ListCheck,
+	Gamepad,
+	Gamepad2,
+	Image,
 } from "lucide-react"
 
 import invitation from "../assets/invitation.png"
@@ -37,7 +40,7 @@ export default function Info() {
 							<h3 className="text-2xl font-bold text-primary mb-4">Event Details</h3>
 
 							<div className="space-y-4">
-								<div className="flex items-start gap-3 p-4 bg-green-50 rounded-lg border border-green-200">
+								<div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg border border-green-200">
 									<Calendar className="text-accent mt-1" size={20} />
 									<div>
 										<p className="font-semibold text-stone-700">Date</p>
@@ -61,7 +64,7 @@ export default function Info() {
 									</div>
 								</div>
 
-								<div className="flex items-start gap-3 p-4 bg-amber-50 rounded-lg border border-amber-200">
+								<div className="flex items-start gap-3 p-3 bg-amber-50 rounded-lg border border-amber-200">
 									<Clock className="text-amber-600 mt-1" size={20} />
 									<div>
 										<p className="font-semibold text-stone-700">Time</p>
@@ -69,7 +72,7 @@ export default function Info() {
 									</div>
 								</div>
 
-								<div className="flex items-start gap-3 p-4 bg-stone-50 rounded-lg border border-stone-200">
+								<div className="flex items-start gap-3 p-3 bg-stone-50 rounded-lg border border-stone-200">
 									<MapPin className="text-stone-600 mt-1" size={20} />
 									<div>
 										<p className="font-semibold text-stone-700">Location</p>
@@ -92,7 +95,7 @@ export default function Info() {
 									</div>
 								</div>
 
-								<div className="flex items-start gap-3 p-4 bg-green-50 rounded-lg border border-green-200">
+								<div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg border border-green-200">
 									<CheckCircle className="text-accent mt-1" size={20} />
 									<div>
 										<p className="font-semibold text-stone-700">RSVP</p>
@@ -100,11 +103,26 @@ export default function Info() {
 									</div>
 								</div>
 
-								<div className="flex items-start gap-3 p-4 bg-stone-50 rounded-lg border border-stone-200">
+								<div className="flex items-start gap-3 p-3 bg-amber-50 rounded-lg border border-amber-200">
+									<Gamepad2 className="text-amber-600 mt-1" size={20} />
+									<div>
+										<p className="font-semibold text-stone-700">Game (Voluntary)</p>
+										<p className="text-stone-600">Send us your baby pic for one of our games </p>
+										<a
+											href="mailto:cheyenne.gan0616@gmail.com?subject=Baby%20Shower%20Game&body=Here's%20my/our%20baby%20picture."
+											className="text-accent underline transition-all hover:text-stone-600 hover:no-underline"
+										>
+											<Image className="inline w-5 h-5 ml-1" />
+											Email to us
+										</a>
+									</div>
+								</div>
+
+								<div className="flex items-start gap-3 p-3 bg-stone-50 rounded-lg border border-stone-200">
 									<Gift className="text-stone-600 mt-1 flex-shrink-0" size={20} />
 									<div>
 										<p className="text-stone-600">
-											Your presence is the greatest gift! For those who’ve asked, here’s our{" "}
+											Your presence is the greatest gift! For those who’ve asked, here’s our
 											<a
 												href="https://my.babylist.com/vincci-tsui"
 												target="_blank"

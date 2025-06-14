@@ -46,11 +46,11 @@ export default function Hero() {
 			</div>
 
 			<div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-10">
-				<div className="md:bg-white/20 backdrop-blur-lg rounded-lg px-10 py-8">
-					<h1 className="text-5xl md:text-7xl font-bold text-primary mb-1 font-subtitle drop-shadow-sm">
+				<div className="md:bg-white/100 rounded-lg px-10 py-8">
+					<h1 className="text-5xl md:text-7xl font-bold text-primary mb-1 font-subtitle drop-shadow-md">
 						BABY SHOWER
 					</h1>
-					<p className="text-4xl md:text-7xl text-secondary drop-shadow-sm mb-0 font-subtitle">
+					<p className="text-4xl md:text-7xl text-secondary drop-shadow-md mb-0 font-subtitle">
 						Gender Reveal
 					</p>
 				</div>
